@@ -74,5 +74,4 @@ jobs:
       - name: Upload Trivy report
         uses: actions/upload-artifact@v4
         with:
-          name: Trivy-report
-          path: results.sarif 
+          sarif_file: trivy-results.sarif
