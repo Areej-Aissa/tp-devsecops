@@ -75,3 +75,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           sarif_file: trivy-results.sarif
+      # Push Docker image sur Docker Hub
+      - name: Push Docker image
+        run: docker push $DOCKER_IMAGE_NAME
